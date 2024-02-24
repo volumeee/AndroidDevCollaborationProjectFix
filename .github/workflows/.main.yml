@@ -1,0 +1,26 @@
+name: CI/CD AndroidDev
+
+on:
+  push:
+    branches:
+      - main
+      - fiturC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup JDK 11
+        uses: actions/setup-java@v2
+        with:
+          distribution: "adopt"
+          java-version: "11"
+
+      - name: Compile and run kotlin program only
+        run: |
+          kotlinc fiturC/fiturC.kt -include-runtime -d hello_world.jar
+          java -jar hello_world.jar
