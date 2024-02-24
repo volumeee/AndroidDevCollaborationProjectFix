@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - fiturA
+      - fiturD
 
 jobs:
   build:
@@ -22,5 +22,5 @@ jobs:
 
       - name: Compile and run kotlin program only
         run: |
-          kotlinc fiturA.kt -include-runtime -d hello_world.jar
+          kotlinc fiturD/main.kt -include-runtime -d hello_world.jar
           java -jar hello_world.jar
