@@ -1,3 +1,3 @@
 fun main(){
-    println("hellow world...ok");
+    println("hellow");
 }
