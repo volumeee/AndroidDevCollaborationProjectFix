@@ -1,4 +1,4 @@
 
 fun main(){
-    println("ini fitur A");
+    println("ini fitur A fix");
 }
