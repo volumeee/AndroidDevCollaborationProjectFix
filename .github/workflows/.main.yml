@@ -22,5 +22,5 @@ jobs:
 
       - name: Compile and run kotlin program only
         run: |
-          kotlinc fiturA.kt -include-runtime -d hello_world.jar
+          kotlinc fiturA/fiturA.kt -include-runtime -d hello_world.jar
           java -jar hello_world.jar
