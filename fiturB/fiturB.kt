@@ -1,3 +1,3 @@
 fun main(){
-    println("Ini fitur B")
+    println("Ini fitur B fix banget")
 }
